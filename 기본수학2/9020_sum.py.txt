@@ -1,0 +1,23 @@
+def sosu(x):
+    m = int(x**0.5)
+
+    p_list = [False,False] + [True]*(x-1)
+
+    for i in range(m+1):
+        if p_list[i] == True:
+            for j in range(i+i, x+1, i):
+                p_list[j] = False
+    return p_list[x]
+                
+T = int(input())
+gold_list = []
+    
+for i in range(T):
+    n = int(input())
+   
+    for i in range(n):
+        p = n - i
+        if sosu(i) == True and sosu(p) == True and p - i >= 0:
+            gold_list.append((i, p))
+            answer = gold_list[-1]
+    print('{} {}'.format(answer[0], answer[1]))
