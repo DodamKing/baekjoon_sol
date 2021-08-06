@@ -109,13 +109,17 @@ for i in range(N):
     print(count, end=' ')
 
 
-# In[100]:
+# In[104]:
 
 
-print(count, end=' ')
+# 조금 더 우아한 코드
+for i in data:
+    rank = 1
+    for j in data:
+        if i[0] < j[0] and i[1] < j[1]:
+            rank += 1
+    print(rank, end=' ')
 
-
-# In[ ]:
 
 
 
