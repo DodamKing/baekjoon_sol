@@ -11,20 +11,22 @@ import sys
 # number_list.sort()
 # print('\n'.join(number_list))
 
-## 카운팅 정렬
+## 카운팅 정렬 활용
 N = int(input())
-li = []
-for _ in range(N):
-    num = sys.stdin.readline()
-    li.append(int(num.rstrip('\n')))
+# 리스트 작성시 메모리를 먹는거 같음
+# li = []
+# for _ in range(N):
+#     num = sys.stdin.readline()
+#     li.append(int(num.rstrip('\n')))
 
 # 인풋으로 받은 수가 몇변 들어왔는지 빈도 저장
-counting_li = [0] * (max(li)+1)
-for i in li:
+counting_li = [0] * 10001
+for _ in range(N):
+    i = int(sys.stdin.readline())
     counting_li[i] += 1
 
 # 배열의 시작부터 돌며 저장된 빈도만큼 인덱스값을 출력
-for i in range(1, ):
-    count = counting_li[i]
+for j in range(1, 10001):
+    count = counting_li[j]
     for _ in range(count):
-        print(i)
+        print(j)
