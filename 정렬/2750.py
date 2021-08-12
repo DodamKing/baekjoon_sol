@@ -22,7 +22,7 @@ for x in bubble_list:
     print(x)
 
 ## insertion sort
-insert_list= [5, 3, 4, 1, 2]
+insert_list = []
 for i in range(1, len(insert_list)):
     j = i - 1
     key = insert_list[i]
