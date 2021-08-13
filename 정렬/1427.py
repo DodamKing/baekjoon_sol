@@ -8,4 +8,4 @@ for i in N:
     li.append(i)
 li.sort()
 li.reverse()
-print(''.join(li))
+print(''.join(li)) # 구분자.join(리스트)
