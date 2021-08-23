@@ -14,8 +14,10 @@ while True:
     if factorial[-1] == '0':
         factorial.pop(-1)
         count += 1
-        print(factorial)
+        # print(factorial)
     else:
         break
 # print(factorial)
 print(count)
+
+# print(n//5 + n//25 + n//125)
